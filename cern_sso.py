@@ -32,7 +32,7 @@ def _init_session(s, url, cookiejar, auth_url_fragment):
     auth/integrated/ (kerberos) and auth/sslclient/ (SSL)
     """
 
-    if cookiejar is not None:
+    if cookiejar:
         log.debug("Using provided cookiejar")
         s.cookies = cookiejar
 
